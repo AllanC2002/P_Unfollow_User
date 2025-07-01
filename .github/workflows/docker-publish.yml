@@ -15,7 +15,7 @@ env:
 
 jobs:
   test:
-    name: Run Pytest
+    name: Run Pytests
     runs-on: ubuntu-latest
 
     steps:
@@ -34,7 +34,7 @@ jobs:
           pip install pytest
 
       - name: tests
-        run: pytest tests/test_unfollow.py
+        run: PYTHONPATH=. pytest tests/test_unfollow.py -v
 
   build:
     name: Build and Push Docker Image
