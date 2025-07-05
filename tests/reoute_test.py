@@ -18,7 +18,7 @@ print("Token:", token)
 
 # User to unfollow
 data_unfollow = {
-    "id_following": 4  # ID to unfollow
+    "id_following": 3  # ID to unfollow
 }
 
 headers = {
